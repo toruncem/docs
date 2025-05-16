@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Athelas Scribe",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -16,9 +16,24 @@
           {
             "group": "Get Started",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              "essentials/download",
+              "essentials/login",
+              "essentials/first-scribe"
+            ]
+          },
+                    {
+            "group": "Customization",
+            "pages": [
+              "essentials/custom-formating",
+              "essentials/create-custom-template"
+            ]
+          },
+          {
+            "group": "Basic Feature Walkthrough",
+            "pages": [
+              "essentials/introduction",
+              "essentials/quickstart",
+              "essentials/development"
             ]
           },
           {
@@ -38,7 +53,7 @@
         "tab": "API Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Get Started",
             "pages": [
               "api-reference/introduction"
             ]
@@ -76,14 +91,14 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/home.svg",
+    "dark": "/logo/home.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:scribe-support@getathelas.com"
       }
     ],
     "primary": {
