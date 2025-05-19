@@ -1,0 +1,57 @@
+---
+title: "History"
+description: "Single view for all your scribes."
+---
+
+### Seeing all History
+
+After you've created your scribe, navigate to the My Scribes tab to access your History.
+‍
+
+Within My Scribes you can:
+
+Access your synced history.
+View your clinical documentation, ICD10/CPT code recommendations, and transcription.
+Make edits to your scribes using the "Edit" button or the "Regenerate" feature.
+Delete a scribe by navigating to the three-dot menu and selecting "Delete."
+
+### Scribe Statuses
+
+Statuses
+Uploading
+Percentage based on uploading progress
+Becomes “Offline” if it’s uploading for more than 30s
+Processing
+Uploaded to Commure. AI model is generating the note
+Any error shows “Error” status
+Generated
+Note generated / ready for review and edits
+Offline
+Uploading error, any upload that takes longer than 30s
+User can select retry button to reupload - see audio caching
+Error
+Backend error, cannot generate note or part of the note
+User can contact us
+Syncing
+When user click EHR Sync, show this status as it’s syncing
+In EHR
+Show this status when EHR sync is completed
+Sync Error
+If EHR Sync encounters an error, show this status
+With MDS
+When a note is sent to MDS, show this status
+Paused
+Paused visit, only show in visit list, not in My Scribes list
+Click on it shows paused visit screen, and user can resume / end visit
+Unassigned
+When a new patient comes into ED, they get triaged and assigned to a doctor
+Sometimes there’s a lag that a patient is assigned to a physician but the app doesn’t reflect it yet.
+User can filter for unassigned patient in visit list, and find their patient
+
+
+### Components of a Scribe
+
+### Post Scribe Actions
+
+
+A Scribe may regenerate from AI Actions, rate Scribe feedback, or other triggers that let user regenerate a scribe. Use this design for anything that triggers a regeneration
