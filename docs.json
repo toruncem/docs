@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "Athelas Scribe",
   "colors": {
     "primary": "#fc5478",
@@ -9,31 +9,62 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Getting Started",
             "pages": [
-              "essentials/download",
-              "essentials/login",
-              "essentials/first-scribe"
-            ]
-          },
-                    {
-            "group": "Customization",
-            "pages": [
-              "essentials/custom-formating",
-              "essentials/create-custom-template"
+              "get_started/overview",
+              "get_started/download",
+              "get_started/login",
+              "get_started/first-scribe"
             ]
           },
           {
-            "group": "Basic Feature Walkthrough",
+            "group": "The Basics",
             "pages": [
-              "essentials/introduction",
-              "essentials/quickstart",
-              "essentials/development"
+              "basics/navigation",
+              "basics/recording",
+              "basics/history",
+              "basics/ehr_sync"
+            ]
+          },
+          {
+            "group": "AI Studio",
+            "pages": [
+              "ai_studio/custom-formatting",
+              "ai_studio/template-library",
+              "ai_studio/dot-phrases"
+
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/overview",
+              "integrations/epic",
+              "integrations/athena",
+              "integrations/other"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/ai-summaries",
+              "advanced/carry-forward",
+              "advanced/collaborator"
+          ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting/common-issues"
+            ]
+          },
+          {
+            "group": "Enterprise Grade",
+            "pages": [
+              "enterprise/security",
+              "enterprise/admin-panel"
             ]
           },
           {
@@ -47,29 +78,7 @@
               "essentials/reusable-snippets"
             ]
           }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
+        ],
     "global": {
       "anchors": [
         {
