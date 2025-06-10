@@ -7,7 +7,7 @@
     "light": "#fc5478",
     "dark": "#fc5478"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/athelas_logo.jpeg",
   "navigation": {
         "groups": [
           {
@@ -42,6 +42,7 @@
           {
             "group": "Advanced",
             "pages": [
+              "advanced/preferences",
               "advanced/ai-summaries",
               "advanced/clinical-copilot",
               "advanced/carry-forward",
