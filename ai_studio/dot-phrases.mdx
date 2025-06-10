@@ -3,37 +3,61 @@ title: "Dot Phrases"
 description: "Dot Phrases are a powerful way to create templates and shortcuts for your documentation."
 ---
 
-### XXX
+Here’s user-facing documentation for the **Dot Phrases** section of your AI Studio/Admin Panel:
 
-*Dot Phrases*
+---
 
-- When I say “ears look good” replace with “Right canal is clear, Tympanic membrane is
-grey with normal light reflex, Left canal is clear, Tympanic membrane is grey with
-normal light reflex. no effusions”
-- When I say “mouth looks good” replace with “mucous membranes are moist, teeth in
-good repair, posterior pharynx is without erythema, without exudate”
-- When I say “heart is good” replace with “heart is regular, no murmurs, rate is normal”
-- When I say “lungs sound good” replace “lungs with good airflow, no wheeze
-start recognizing key phrases to note that the area was examined and not document
-”not examined”
-- “I’m going to listen to your neck” or “swallow for me” = neck exam
-- “just breath normal for me” = heart exam
-- “big deep breath” = lung exam
-- “lay back here I’m going to feel your belly” = abdominal exam, ect
-- “any fluid in your legs” = extremities
-- Instead of saying “no information provided” just leave the entire section blank, leave it
-out. For example in the physical exam instead of saying “abdomen - no information or
-not examined” just delete the abdomen portion of the exam.
-- If I ask the patient particular medical questions include the patient s answers in the
-history. For example “are you checking your sugars at home”, “are you checking your
-blood pressure at home”, “how long has the symptom been present”, “are there other
-associated symptoms”. If I ask the patient a series of questions related to a certain
-concern or complaint all their answers should be documented.
+## Dot Phrases
+
+The **Dot Phrases** feature allows you to configure shortcut audio triggers that automatically expand into longer phrases during documentation. This helps streamline note creation and reduce repetitive typing.
+
+---
+
+### What is a Dot Phrase?
+
+A dot phrase pairs a **short audio cue** with a **predefined expanded phrase**. When the audio trigger is detected during documentation, the expanded text will be inserted automatically into the note.
+
+For example:
+
+* **Audio Trigger:** `belly`
+* **Expanded Phrase:** `abdomen`
+
+---
+
+### Creating or Editing a Dot Phrase
+
+To create a new dot phrase or edit an existing one:
+
+1. **Audio Trigger**:
+
+   * Enter the voice command you want to use (e.g., `belly`, `heart sounds good`).
+   * This should be short, unique, and easy to say clearly.
+
+2. **Expanded Phrase**:
+
+   * Input the full text you want inserted when the trigger is recognized (up to 2000 characters).
+   * You can include clinical shorthand, normal findings, or repetitive language blocks.
+
+3. **Apply to Template**:
+
+   * Select the template this dot phrase should be active in (e.g., SOAP Note).
+   * Dot phrases are template-specific to prevent accidental cross-template usage.
+
+4. Click **Save Dot Phrase** to confirm your changes.
+
+---
+
+### Deleting a Dot Phrase
+
+To delete an existing dot phrase, simply click the **Delete** button in the bottom-right corner of the phrase editor.
+
+<Warning>Deleting a dot phrase is permanent. You’ll need to re-create it from scratch if needed later.</Warning>
 
 
-User adds dot phrases so that Scribe replaces the specified audio trigger with expanded phrases that are more formal / fit for documentation
-When user clicks “New Dot Phrase” they are navigated to the dot phrase edit screen with default text fields
-By default, dot phrases are applied to all templates
-User can select specific templates to apply dot phrases to
-If user unchecks “all template”, it deselects all options
-Otherwise, when user unchecks one template, “all template” is unchecked, but doesn’t affect other checked templates 
+---
+
+### Best Practices
+
+* Use clear, specific audio triggers to reduce misinterpretation.
+* Avoid using single syllable triggers like "a", "no", or "the".
+* Test your dot phrases in the context of actual note generation to confirm expected behavior.

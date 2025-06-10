@@ -3,9 +3,56 @@ title: "Custom Formatting"
 description: "Allow users to customize the formatting of their notes"
 ---
 
-### Custom Formatting
 
-Customized Formatting can be a powerful tool to turn a good note, into your note. With this feature, you can instruct the AI to create notes tailored to your style and requirements. Simply use an English command to tell the AI what you want it to do.
+## Custom Formatting
+
+**Custom Formatting** allows providers to personalize how their notes are generated. By setting specific formatting instructions, you can ensure the output consistently reflects your clinical style, preferences, and workflow needs.
+
+---
+
+### What It Does
+
+Custom formatting applies note-by-note instructions to the AI, as if you were guiding a human scribe. These rules impact how the note is structured, phrased, and presented.
+
+For example, you can instruct the system to:
+
+* Bold all section headers
+* Use bullet points in the plan
+* Include gender-based salutations (e.g., “Mr” or “Mrs”)
+* Number the patient’s next steps
+* Add specific formatting for medications or vitals
+
+> The model will follow these instructions every time it generates a note for the selected template.
+
+---
+
+### How to Set It Up
+
+1. Navigate to **Custom Formatting** under the AI Studio.
+2. Select the note template (e.g., SOAP Note, Progress Note).
+3. Use the prompt box to type your rules (up to 4,000 characters).
+4. Click **Save Rules**.
+
+You can also click **"See more example rules"** for inspiration.
+
+---
+
+### Notes
+
+* Formatting rules only apply to future scribe generations.
+* To apply updated rules to a past note, you must **regenerate** that note.
+* Each template can have its own formatting rules—great for specialists or multi-format teams.
+
+---
+
+### Examples of Useful Rules
+
+```
+- Use bullet points for all sections except Subjective.
+- End each note with “Follow-up as needed.”
+- Avoid abbreviations for diagnoses.
+- Always refer to the patient as “the patient” (not “Pt.”).
+```
 
 
 ### Formatting Examples

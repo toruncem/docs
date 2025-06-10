@@ -4,8 +4,8 @@
   "name": "Athelas Scribe",
   "colors": {
     "primary": "#fc5478",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "light": "#fc5478",
+    "dark": "#fc5478"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -25,6 +25,8 @@
               "basics/navigation",
               "basics/recording",
               "basics/history",
+              "basics/scribe-actions",
+              "basics/visits",
               "basics/ehr_sync"
             ]
           },
@@ -38,18 +40,10 @@
             ]
           },
           {
-            "group": "Integrations",
-            "pages": [
-              "integrations/overview",
-              "integrations/epic",
-              "integrations/athena",
-              "integrations/other"
-            ]
-          },
-          {
             "group": "Advanced",
             "pages": [
               "advanced/ai-summaries",
+              "advanced/clinical-copilot",
               "advanced/carry-forward",
               "advanced/collaborator"
           ]
@@ -68,40 +62,18 @@
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Speciality Specifc",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "speciality/home-health",
+              "speciality/emergency",
+              "speciality/hospitalists"
             ]
           }
-        ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+        ]
   },
   "logo": {
     "light": "/logo/home.svg",
-    "dark": "/logo/home.svg"
+    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
@@ -112,15 +84,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "label": "Use on Web",
+      "href": "https://scribe.athelas.com/"
     }
   }
 }
