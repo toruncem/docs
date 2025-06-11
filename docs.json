@@ -7,7 +7,7 @@
     "light": "#fc5478",
     "dark": "#fc5478"
   },
-  "favicon": "/logo/athelas_logo.jpeg",
+  "favicon": "/logo/athelas_logo.svg",
   "navigation": {
         "groups": [
           {
@@ -73,8 +73,8 @@
         ]
   },
   "logo": {
-    "light": "/logo/home.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/athelas_full_light.svg",
+    "dark": "/logo/athelas_full_dark.svg"
   },
   "navbar": {
     "links": [
