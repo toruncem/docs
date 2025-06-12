@@ -30,7 +30,7 @@ To set up SCIM with Commure Ambient, you will need to configure a SCIM applicati
 
 ### **SCIM User Schema Template:**
 
-
+```json
 {
     "schemas": [
         "urn:ietf:params:scim:schemas:core:2.0:User",
@@ -53,10 +53,9 @@ To set up SCIM with Commure Ambient, you will need to configure a SCIM applicati
         "npi": "{$parameters.npi}"
     }
 }
+```
 
-Note: The variables like {\$[user.email](http://user.email)} are placeholders specific to your IdP's mapping syntax (e.g., Okta, Azure AD). Please refer to your IdP's documentation for the correct variable format.
-
-
+Note: The variables like {$user.email} are placeholders specific to your IdP's mapping syntax (e.g., Okta, Azure AD). Please refer to your IdP's documentation for the correct variable format.
 
 ### **SCIM Implementation Steps**
 
