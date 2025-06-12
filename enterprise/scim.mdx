@@ -1,0 +1,66 @@
+---
+title: "SCIM - Automated User Provisioning"
+description: "Specifications for implementing role based access controls with SCIM on Athelas Scribe "
+---
+
+Commure Ambient supports SCIM (System for Cross-domain Identity Management) 2.0 to enable automated user lifecycle management. By integrating your Identity Provider (IdP) with Commure Ambient, you can automate the creation, updating, and deactivation of user accounts, ensuring data consistency and enhancing security by streamlining the provisioning and deprovisioning process.
+
+### **Supported SCIM Providers**
+
+Commure Ambient can integrate with any SCIM 2.0 compliant Identity Provider, including:
+
+- Okta / Auth0
+- Microsoft Azure Active Directory
+- Ping Identity
+- AWS IAM / Cognito
+- Google Workspace
+- Sailpoint
+- ConductorOne
+- AuthX
+
+### **SCIM Integration Requirements**
+
+To set up SCIM with Commure Ambient, you will need to configure a SCIM application within your Identity Provider using the following details.
+
+**SCIM Base URL:** The unique endpoint for your organization's SCIM integration. This will be provided to you by the Commure team. It will follow this format: https://rcm-api.athelas.com/v1/scribe/{site_id}/scim/v2/
+
+**Authorization Token:** A secret Bearer Token used to authenticate requests from your IdP to Commure Ambient. This will also be provided by the Commure team.
+
+**Attribute Mapping:** You must configure your IdP to map your user attributes to the Commure Ambient SCIM schema. Use the following JSON template to guide your configuration.
+
+### **SCIM User Schema Template:**
+
+```
+{
+    "schemas": [
+        "urn:ietf:params:scim:schemas:core:2.0:User",
+        "urn:ietf:params:scim:schemas:extension:custom:2.0:User"
+    ],
+    "userName": "{$user.email}",
+    "name": {
+        "givenName": "{$user.firstname}",
+        "familyName": "{$user.lastname}"
+    },
+    "emails": [
+        {
+            "value": "{$user.email}",
+            "primary": true,
+            "type": "work"
+        }
+    ],
+    "active": "{$user.status}",
+    "urn:ietf:params:scim:schemas:extension:custom:2.0:User": {
+        "npi": "{$parameters.npi}"
+    }
+}
+```
+
+Note: The variables like {\$[user.email](http://user.email)} are placeholders specific to your IdP's mapping syntax (e.g., Okta, Azure AD). Please refer to your IdP's documentation for the correct variable format.
+
+### **SCIM Implementation Steps**
+
+1. **Request SCIM Enablement:** Contact the Commure implementation team to request that SCIM provisioning be enabled for your organization.
+2. **Receive Configuration Details:** Our team will securely provide you with your unique **SCIM Base URL** and **Authorization Token**.
+3. **Configure Your Identity Provider:** Your IT team will use the provided details and the attribute mapping schema to set up and configure the SCIM application within your IdP.
+4. **Testing:** Assign test users to the SCIM application in your IdP to ensure that user creation, updates (e.g., name or NPI changes), and deactivation function as expected.
+5. **Activation:** Once testing is successfully completed, you can enable the integration for all authorized users in your organization.
