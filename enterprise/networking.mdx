@@ -1,0 +1,22 @@
+---
+title: "Network Connections"
+description: "Specifications and Requirements for Network Connectivity with Athelas Scribe"
+---
+
+Athelas Scribe is designed to be network-efficient. While it operates without an internet connection during patient encounters, internet connectivity is required to upload audio recordings for processing once available. To ensure full functionality, please allow the following network connections through your firewall:
+
+### **Required URLs and Backend APIs:**
+
+- [scribe.athelas.com](http://scribe.athelas.com): Main application interface.
+- [rcm-api.athelas.com](http://rcm-api.athelas.com): Backend API services.
+
+### **Optional URLs (for enhanced functionality):**
+
+- [oauth2.googleapis.com](http://oauth2.googleapis.com): For Google OAuth authentication.
+- [api.segment.io](http://api.segment.io): For user journey analytics.
+- [cdn-settings.segment.com](http://cdn-settings.segment.com): For content delivery network settings.
+- [api.ipify.org](http://api.ipify.org): For location services and IP-based restrictions.
+
+All traffic utilizes HTTPS over TLS 1.2 or higher, communicating over standard port 443 to ensure secure data transmission.
+
+For deployment and provisioning, Athelas Scribe supports enterprise management tools such as Google Workspace Admin Console for Chrome environments and Windows Active Directory Group Policy for centralized installation or Windows Active Directory Environment.
