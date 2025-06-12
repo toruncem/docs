@@ -61,7 +61,8 @@
               "enterprise/admin-panel",
               "enterprise/security",
               "enterprise/networking",
-              "enterprise/sso"
+              "enterprise/sso",
+              "enterprise/scim"
             ]
           },
           {
