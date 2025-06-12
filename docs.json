@@ -59,7 +59,8 @@
             "group": "Enterprise Grade",
             "pages": [
               "enterprise/security",
-              "enterprise/admin-panel"
+              "enterprise/admin-panel",
+              "enterprise/sso"
             ]
           },
           {
