@@ -58,8 +58,11 @@
           {
             "group": "Enterprise Grade",
             "pages": [
+              "enterprise/admin-panel",
               "enterprise/security",
-              "enterprise/admin-panel"
+              "enterprise/networking",
+              "enterprise/sso",
+              "enterprise/scim"
             ]
           },
           {
